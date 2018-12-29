@@ -18,7 +18,9 @@ public class ApiController {
     @RequestMapping("/chess")
     public String chess(String chess){
         AI m_AI = new AI();
+        System.err.println("chess:"+chess);
         int[] board = Chess.str_to_vec(chess);
+        System.out.println("输入棋局");
         m_AI.m_print(board);
         node root = m_AI.a_b(board, 4);
         board[root.to] = board[root.from];

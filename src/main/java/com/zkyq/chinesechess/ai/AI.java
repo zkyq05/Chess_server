@@ -90,12 +90,12 @@ public class AI {
         for(int i = 0; i < 10; i++) {
             for(int j = 0; j < 9; j++) {
                 if(result[i*9+j] > 9)
-                    System.out.print(result[i*9+j]);
+                    System.err.print(result[i*9+j]);
                 else
-                    System.out.print(" "+result[i*9+j]);
-                System.out.print(" ");
+                    System.err.print(" "+result[i*9+j]);
+                System.err.print(" ");
             }
-            System.out.println("");
+            System.err.println("");
         }
     }
 //    String vec_to_str(int[] v) {
